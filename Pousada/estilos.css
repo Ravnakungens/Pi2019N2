@@ -1,0 +1,111 @@
+body {
+    background-color: green;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    background-color: green;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    padding: 10px;
+    display: inline-block;
+    background-color: lightgreen;
+    color: black;
+    text-decoration: none;
+    border-bottom: 3px solid #ededed;
+  }
+
+  nav ul li a:hover {
+    background-color: #8d8d8d;
+    color: #000000;
+    border-bottom: 3px solid rgb(43, 43, 43);
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: auto auto auto;
+  }
+  
+  header {
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  
+  footer {
+    background-color: green;
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+    
+  article {
+    background-color: green;
+  }
+  
+  aside {
+    background-color: green;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  header img#logo {
+    width: 30%;
+  }
+
+  h1 {
+      color: darkgrey;
+      padding: 60px;
+      text-align: center;
+  }
+
+  h2 {
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      text-align: center;
+      font-size: 60px;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  th, td {
+    padding: 10px;
+  }
+  
+  thead tr {
+    border-bottom: solid 3px rgb(53, 53, 53);
+  }
+  
+  tbody tr:hover {
+    background-color: rgb(116, 116, 116);
+  }
+  
+  tfoot {
+    background-color: green;
+    color: #fff;
+    font-weight: bold;
+    font-style: italic;
+  }
+@media screen and (max-width: 480px) {
+    article > img#pousada {
+    display: none;
+        }
+      }
